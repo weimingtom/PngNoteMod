@@ -1,11 +1,6 @@
 # PngNoteMod
 My PngNote non_boox Java port, a simple handwrite notepad Android application for easy modification, see also https://github.com/karino2/PngNote/tree/non_boox    
 
-## References  
-* https://github.com/karino2/PngNote/tree/non_boox  
-* https://gitee.com/weimingtom2000/PngNoteMod
-* PngNote_20241212_v1_change_name_pre.7z  
-
 ## Licensing
 ```
 Code  
@@ -18,3 +13,15 @@ Launcher icon assets (ic_launcher.png) are distributed under the Creative Common
 
 Artists, Copyright: きみどり-san (twitter: @kani_beam__)  
 ```
+
+## References  
+* https://github.com/karino2/PngNote/tree/non_boox  
+* https://gitee.com/weimingtom2000/PngNoteMod
+* PngNote_20241212_v1_change_name_pre.7z  
+
+## What is different from the original code
+* From Kotlin to Java
+* No need Androidx Compose Framework
+* (Not stable, old method) Save data to sdcard directly
+* Easier for modification for my company project (currently not used)
+* (TODO, not commited yet) Adding more powerful functions, inspired by [LibreraReader](https://github.com/foobnix/LibreraReader) and [xournalpp_mobile](https://github.com/xournalpp/xournalpp_mobile)   
