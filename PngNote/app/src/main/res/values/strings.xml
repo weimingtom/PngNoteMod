@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PngNote</string>
+
+    <string name="reflow_button">REFLOW</string>
+    <string name="highlight_button">HIGHLIGHT</string>
+    <string name="draw_button">DRAW</string>
+    <string name="delete_button">DELETE</string>
+    <string name="note_button">NOTE</string>
+    <string name="toggle_button">TOGGLE</string>
+</resources>

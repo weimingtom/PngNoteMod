@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="mtmobile__treefontsize1">22sp</dimen>
+    <dimen name="mtmobile__treefontsize2">20sp</dimen>
+    <dimen name="mtmobile__treefontsize3">40sp</dimen>
+    <dimen name="mtmobile__treefontsize4">15sp</dimen>
+    <dimen name="mtmobile__treefontsize5">40sp</dimen>
+</resources>
