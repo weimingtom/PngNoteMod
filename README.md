@@ -29,3 +29,7 @@ Artists, Copyright: きみどり-san (twitter: @kani_beam__)
 ## Branches
 * PngNote: basic functions, like the original code.    
 * PngNote2: adding more powerful functions.  
+
+## Status
+* Currently not stable, I will change it largely in future
+* But it may work if running in some Android Emulators, like MuMu Emulator (old version, 2.7.34.0 (20230814231105))   
