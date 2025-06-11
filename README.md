@@ -24,4 +24,8 @@ Artists, Copyright: きみどり-san (twitter: @kani_beam__)
 * No need Androidx Compose Framework
 * (Not stable, old method) Save data to sdcard directly
 * Easier for modification for my company project (currently not used)
-* (TODO, not commited yet) Adding more powerful functions, inspired by [LibreraReader](https://github.com/foobnix/LibreraReader) and [xournalpp_mobile](https://github.com/xournalpp/xournalpp_mobile)   
+* Adding more powerful functions, inspired by [LibreraReader](https://github.com/foobnix/LibreraReader) and [xournalpp_mobile](https://github.com/xournalpp/xournalpp_mobile)   
+
+## Branches
+* PngNote: basic functions, like the original code.    
+* PngNote2: adding more powerful functions.  
