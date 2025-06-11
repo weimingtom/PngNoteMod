@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 文件批注工具栏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar"
+		android:scrollbarSize="0dp"
+		>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+
+
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="0dp"
+				>
+				<!--25dp-->
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonBack"
+					android:src="@drawable/ic_baseline_arrow_back_24"
+					android:text="BACK"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/reflow_button2txt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Back"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#FFFFFFFF"
+				>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/buttonPen2Wrapper"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:cardBackgroundColor="#FFCCCCCC"
+					app:cardCornerRadius="4dp"
+					app:cardElevation="0dp"
+					>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonPen2"
+					android:src="@drawable/ic_baseline_edit_24_selected"
+					android:text="PEN"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				</androidx.cardview.widget.CardView>
+				<TextView
+					android:id="@+id/tree_buttontxt2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Pen"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#FFFFFFFF"
+				>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/buttonEraser2Wrapper"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:cardBackgroundColor="#FFCCCCCC"
+					app:cardCornerRadius="4dp"
+					app:cardElevation="0dp"
+					>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonEraser2"
+					android:src="@mipmap/eraser_button_selected"
+					android:text="ERASER"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				</androidx.cardview.widget.CardView>
+				<!--
+				https://fontawesome.com/search?q=close&o=r
+				https://fontawesome.com/icons/file-import?f=classic&s=regular
+				-->
+				<TextView
+					android:id="@+id/goto_page_buttontxt2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Eraser"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone"
+				>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/cvColorSel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:cardBackgroundColor="#FF000000"
+					app:cardCornerRadius="@dimen/pngnote__treefontsize5_half"
+					app:cardElevation="4dp"
+					>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonPenColor"
+					android:text="PAINT"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:src="@drawable/ic_baseline_color_lens_24"
+					/>
+				</androidx.cardview.widget.CardView>
+
+				<!--
+				android:src="@drawable/ic_baseline_color_lens_24"
+				-->
+				<TextView
+					android:id="@+id/tree_buttonpentxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Background"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonPaint"
+					android:src="@drawable/ic_baseline_format_paint_24"
+					android:text="PAINT"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/tree_buttonpainttxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Paint"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonPen"
+					android:src="@drawable/ic_baseline_edit_24"
+					android:text="PEN"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/tree_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Pen"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonBrush"
+					android:src="@drawable/ic_baseline_brush_24"
+					android:text="PEN"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/highlight_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Highlight"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+			<!--STYLUS,HIGHLIGHT-->
+
+
+			<LinearLayout
+				android:visibility="gone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonEraser"
+					android:src="@mipmap/eraser_button"
+					android:text="ERASER"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<!--
+				https://fontawesome.com/search?q=close&o=r
+				https://fontawesome.com/icons/file-import?f=classic&s=regular
+				-->
+				<TextView
+					android:id="@+id/goto_page_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Eraser"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<!--a divider-->
+			<View
+				android:layout_width="1dp"
+				android:paddingRight="8dp"
+				android:paddingLeft="8dp"
+				android:layout_height="match_parent"
+				android:background="#FF8E8F90"
+				android:visibility="gone"
+				/>
+
+
+
+
+			<!--a divider-->
+			<View
+				android:layout_width="1dp"
+				android:paddingRight="8dp"
+				android:paddingLeft="8dp"
+				android:layout_height="match_parent"
+				android:background="#FF8E8F90"
+				android:visibility="gone"
+				/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ImageButton
+                android:layout_width="@dimen/pngnote__treefontsize5"
+                android:layout_height="@dimen/pngnote__treefontsize5"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textAllCaps="true"
+                android:background="@drawable/toolbar_button"
+                android:id="@+id/highlight_button"
+                android:src="@drawable/icon_highlight"
+                android:text="@string/highlight_button" 
+                android:visibility="gone"
+                />
+
+            <!--a divider-->
+            <View
+                android:layout_width="1dp"
+                android:paddingRight="3dp" android:paddingLeft="3dp"
+                android:layout_height="match_parent"
+                android:background="#FF8E8F90" 
+                android:visibility="gone"
+                />
+
+			<View
+				android:layout_width="20dp"
+				android:layout_height="match_parent"
+				android:visibility="gone"
+				/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/draw_tools_holder"
+                android:background="@drawable/toolbar_button2"
+                >
+
+
+
+                <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                >
+
+					<ImageButton
+						android:id="@+id/buttonUndo"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
+						android:layout_centerVertical="true"
+						android:background="@drawable/toolbar_button"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:scaleType="fitCenter"
+						android:src="@drawable/outline_undo"
+						android:text="UNDO"
+						android:textAllCaps="true"
+						android:textColor="@color/black"
+						android:textSize="11sp"
+						android:layout_marginLeft="10px"
+						android:layout_marginRight="10px"
+						android:layout_gravity="center"
+						android:gravity="center"
+						/>
+	                <TextView
+						android:id="@+id/draw_buttontxt"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
+	                    android:layout_gravity="center"
+	                    android:text="Undo"
+	                    android:gravity="center"
+                    	android:layout_marginLeft="10px"
+	                    android:layout_marginRight="10px"
+						android:visibility="gone"
+	                    />
+	                <!-- 
+	                android:text="批注"
+	                    
+	                 -->
+                </LinearLayout>
+
+                <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                >
+	                <ImageButton
+	                    android:layout_width="@dimen/pngnote__treefontsize5"
+	                    android:layout_height="@dimen/pngnote__treefontsize5"
+	                    android:layout_centerVertical="true"
+	                    android:scaleType="fitCenter"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"
+	                    android:textColor="@color/black"
+	                    android:textSize="11sp"
+	                    android:textAllCaps="true"
+	                    android:background="@drawable/toolbar_button"
+	                    android:id="@+id/buttonRedo"
+	                    android:src="@drawable/outline_redo"
+	                    android:text="REDO"
+	                    android:layout_gravity="center"
+	                    android:gravity="center"
+	                    />
+					<TextView
+						android:id="@+id/line_color_buttontxt"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
+	                    android:text="Redo"
+	                    android:layout_gravity="center"
+	                    android:gravity="center"
+                    	android:layout_marginLeft="10px"
+	                    android:layout_marginRight="10px"
+						android:visibility="gone"
+	                    />
+                </LinearLayout>
+                
+                <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+	                >
+	                <ImageButton
+	                    android:layout_width="@dimen/pngnote__treefontsize5"
+	                    android:layout_height="@dimen/pngnote__treefontsize5"
+	                    android:layout_centerVertical="true"
+	                    android:scaleType="fitCenter"
+	                    android:paddingLeft="5dp"
+	                    android:paddingRight="5dp"
+	                    android:textColor="@color/black"
+	                    android:textSize="11sp"
+	                    android:textAllCaps="true"
+	                    android:background="@drawable/toolbar_button"
+	                    android:id="@+id/buttonGrid"
+	                    android:src="@drawable/baseline_grid_view"
+	                    android:text="GRID"
+	                    android:layout_gravity="center"
+	                    android:gravity="center"
+	                    />
+					<TextView
+						android:id="@+id/line_thickness_buttontxt"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
+	                    android:text="Grid"
+	                    android:layout_gravity="center"
+	                    android:gravity="center"
+                    	android:layout_marginLeft="10px"
+	                    android:layout_marginRight="10px"
+	                    android:visibility="gone"
+						/>
+                </LinearLayout>
+
+				<View
+					android:layout_width="40dp"
+					android:layout_height="match_parent"
+					android:visibility="gone"
+					/>
+
+				<!--a divider-->
+				<View
+					android:layout_width="1dp"
+					android:paddingRight="3dp"
+					android:paddingLeft="3dp"
+					android:layout_height="match_parent"
+					android:background="#FF8E8F90"
+					android:id="@+id/viewLineNote"
+					android:visibility="gone"
+					/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/note_holder"
+                android:background="@drawable/toolbar_button2"
+				>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone"
+					>
+					<ImageButton
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
+						android:layout_centerVertical="true"
+						android:scaleType="fitCenter"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:textColor="@color/black"
+						android:textSize="11sp"
+						android:textAllCaps="true"
+						android:background="@drawable/toolbar_button"
+						android:id="@+id/buttonFirstPage"
+						android:src="@drawable/outline_first_page"
+						android:text="FIRST PAGE"
+						android:layout_gravity="center"
+						android:gravity="center"
+						/>
+					<TextView
+						android:id="@+id/undo_annot_buttontxt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/pngnote__treefontsize4"
+						android:text="First Page"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:layout_marginLeft="10px"
+						android:layout_marginRight="10px"
+						android:visibility="gone"
+						/>
+				</LinearLayout>
+
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:id="@+id/linearTextAnnot"
+					>
+					<ImageButton
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
+						android:layout_centerVertical="true"
+						android:scaleType="fitCenter"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:textColor="@color/black"
+						android:textSize="11sp"
+						android:textAllCaps="true"
+						android:background="@drawable/toolbar_button"
+						android:id="@+id/buttonPrevPage"
+						android:src="@drawable/baseline_chevron_left"
+						android:text="PREV PAGE"
+						android:layout_gravity="center"
+						android:gravity="center"
+						/>
+					<TextView
+						android:id="@+id/note_buttontxt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/pngnote__treefontsize4"
+						android:text="Prev Page"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:layout_marginLeft="10px"
+						android:layout_marginRight="10px"
+						android:visibility="gone"
+						/>
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/textViewPageInfo"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:text="1/1"
+					android:textStyle="bold"
+					android:gravity="center|center_vertical"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					/>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					>
+					<ImageButton
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
+						android:layout_centerVertical="true"
+						android:scaleType="fitCenter"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:textColor="@color/black"
+						android:textSize="11sp"
+						android:textAllCaps="true"
+						android:background="@drawable/toolbar_button"
+						android:id="@+id/buttonNextPage"
+						android:src="@drawable/baseline_chevron_right"
+						android:text="NEXT PAGE"
+						android:layout_gravity="center"
+						android:gravity="center"
+						/>
+					<TextView
+						android:id="@+id/delete_buttontxt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/pngnote__treefontsize4"
+						android:text="Next Page"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:layout_marginLeft="10px"
+						android:layout_marginRight="10px"
+						android:visibility="gone"
+						/>
+				</LinearLayout>
+
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone"
+					>
+					<ImageButton
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
+						android:layout_centerVertical="true"
+						android:scaleType="fitCenter"
+						android:paddingLeft="5dp"
+						android:paddingRight="5dp"
+						android:textColor="@color/black"
+						android:textSize="11sp"
+						android:textAllCaps="true"
+						android:background="@drawable/toolbar_button"
+						android:id="@+id/buttonLastPage"
+						android:src="@drawable/outline_last_page"
+						android:text="LAST PAGE"
+						android:layout_gravity="center"
+						android:gravity="center"
+						/>
+					<TextView
+						android:id="@+id/upload_buttontxt"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="@dimen/pngnote__treefontsize4"
+						android:text="Last Page"
+						android:layout_gravity="center"
+						android:gravity="center"
+						android:layout_marginLeft="10px"
+						android:layout_marginRight="10px"
+						android:visibility="gone"
+						/>
+				</LinearLayout>
+            </LinearLayout>
+
+
+            <!--a divider-->
+            <View
+                android:layout_width="1dp"
+                android:paddingRight="3dp"
+				android:paddingLeft="3dp"
+                android:layout_height="match_parent"
+                android:background="#FF8E8F90"
+				android:visibility="gone"
+				/>
+
+            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical"
+				android:visibility="gone"
+	                >
+
+            </LinearLayout>
+
+			<!--a divider-->
+			<View
+				android:layout_width="1dp"
+				android:paddingRight="3dp" android:paddingLeft="3dp"
+				android:layout_height="match_parent"
+				android:background="#FF8E8F90"
+				android:visibility="gone"
+				/>
+
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonRemovePage"
+					android:src="@drawable/trash_can_solid_3"
+					android:text="REMOVE PAGE"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<!--ic_baseline_remove_24-->
+				<TextView
+					android:id="@+id/remove_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Remove page"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonAddPage"
+					android:src="@drawable/ic_baseline_add_24"
+					android:text="ADD PAGE"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/close_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Add page"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+
+
+            
+            <!--
+                this layout holds some buttons for testing
+                normally it's not shown.
+            -->
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone"
+				>
+				<ImageButton
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
+					android:layout_centerVertical="true"
+					android:scaleType="fitCenter"
+					android:paddingLeft="5dp"
+					android:paddingRight="5dp"
+					android:textColor="@color/black"
+					android:textSize="11sp"
+					android:textAllCaps="true"
+					android:background="@drawable/toolbar_button"
+					android:id="@+id/buttonShare"
+					android:src="@drawable/ic_baseline_share_24"
+					android:text="SHARE"
+					android:layout_gravity="center"
+					android:gravity="center"
+					/>
+				<TextView
+					android:id="@+id/share_buttontxt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/pngnote__treefontsize4"
+					android:text="Share"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginLeft="10px"
+					android:layout_marginRight="10px"
+					android:visibility="gone"
+					/>
+			</LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</merge>

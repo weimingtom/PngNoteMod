@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="pngnote__treefontsize1">22sp</dimen>
+    <dimen name="pngnote__treefontsize2">20sp</dimen>
+    <dimen name="pngnote__treefontsize3">40sp</dimen>
+    <dimen name="pngnote__treefontsize4">15sp</dimen>
+    <dimen name="pngnote__treefontsize5">40sp</dimen>
+    <dimen name="pngnote__treefontsize5_half">20sp</dimen>
+
+    <dimen name="book_name_height">25dp</dimen>
+
+    <dimen name="pngnote__colorButtonW">102dp</dimen>
+    <dimen name="pngnote__colorButtonH">82dp</dimen>
+    <dimen name="pngnote__colorButtonCW">32dp</dimen>
+    <dimen name="pngnote__colorButtonCH">32dp</dimen>
+    <dimen name="pngnote__colorButtonMargin">2dp</dimen>
+    <dimen name="pngnote__colorButtonCW_half">16dp</dimen>
+
+</resources>

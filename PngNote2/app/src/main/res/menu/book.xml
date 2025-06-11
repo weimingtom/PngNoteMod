@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pen"
+        app:showAsAction="collapseActionView"
+        android:checkable="true"
+        android:title="Pen" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/eraser"
+        android:checkable="true"
+        android:title="Eraser" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/undo"
+        android:title="Undo" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/redo"
+        android:title="Redo" />
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/grid"
+        android:title="Grid" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/firstPage"
+        android:title="First Page" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/prevPage"
+        android:title="Prev Page" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/nextPage"
+        android:title="Next Page" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/lastPage"
+        android:title="Last Page" />
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/addPage"
+        android:title="Add Page" />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/share"
+        android:title="Share" />
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvColor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#FFF44336"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

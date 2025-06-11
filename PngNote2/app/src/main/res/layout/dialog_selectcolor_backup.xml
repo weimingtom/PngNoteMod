@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select color"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        />
+
+    <!--see
+    D:\work_fbreader\flutter_windows_2.5.0-stable\packages\flutter\lib\src\material\colors.dart
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="#FFF44336"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="10dp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="#FFFF5252"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <!--a divider-->
+        <View
+            android:layout_width="1dp"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:layout_height="match_parent"
+            android:background="#FF8E8F90"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="#FFEBEE"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="#FFEBEE"
+                        android:gravity="right|center_vertical"
+                        android:textSize="20sp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

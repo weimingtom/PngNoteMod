@@ -8,10 +8,8 @@ import android.os.ParcelFileDescriptor;
 import android.util.Base64;
 import android.util.Log;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
-import org.librera.JSONArray;
-import org.librera.JSONString;
-import org.librera.LinkedJSONObject;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -244,7 +242,7 @@ public class BookIO {
             }
             JSONArray arr = new JSONArray();
             for (SimpleFileMeta meta : datas3) {
-                LinkedJSONObject obj = new LinkedJSONObject();
+                JSONObject obj = new JSONObject();
                 obj.put("preview", meta.getPreview());
                 obj.put("name", meta.getName());
                 obj.put("path", meta.getPath());
@@ -469,7 +467,7 @@ public class BookIO {
         try {
             JSONArray jsonArray = new JSONArray(recentFiles);
             for (int i = 0; i < jsonArray.length(); i++) {
-                LinkedJSONObject item = jsonArray.getJSONObject(i);
+                JSONObject item = jsonArray.getJSONObject(i);
                 if (item != null) {
                     String preview = item.optString("preview");
                     String name = item.optString("name");

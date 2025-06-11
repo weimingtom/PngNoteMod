@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    >
+<!--
+android:background="@android:color/transparent"
+-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF8F8F8"
+        >
+        <!--#FFCCCCCC-->
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+            <!--android:background="#FFDDDDDD"-->
+
+
+            <!--android:layout_height="100dp"-->
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="hello"-->
+    <!--            />-->
+            <ImageView
+                android:id="@+id/bookgrid_pic_backgroud"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/bookgrid_pic"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|center_vertical"
+                android:background="#FFFFFFFF"
+                android:clickable="false"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/bookgrid_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="no title"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            android:maxLines="2"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButtonDelete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/trash_can_solid_3"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            />
+        <!--ic_baseline_remove_circle_outline_24-->
+    </LinearLayout>
+</LinearLayout>

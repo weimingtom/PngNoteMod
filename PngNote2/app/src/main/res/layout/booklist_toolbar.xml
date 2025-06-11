@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 文件批注工具栏 -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/toolbar"
+		android:orientation="horizontal"
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+			>
+			<ImageButton
+				android:id="@+id/imageButtonBack"
+				android:layout_width="@dimen/pngnote__treefontsize5"
+				android:layout_height="@dimen/pngnote__treefontsize5"
+				android:layout_gravity="center"
+				android:background="@drawable/toolbar_button"
+				android:gravity="center"
+				android:paddingLeft="5dp"
+				android:paddingRight="5dp"
+				android:scaleType="fitCenter"
+				android:text="@string/reflow_button"
+				android:textAllCaps="true"
+				android:textColor="@color/black"
+				android:textSize="11sp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:src="@drawable/ic_baseline_arrow_back_24"
+				/>
+<!--android:src="@mipmap/ic_launcher"
+				-->
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/pngnote__treefontsize5"
+				android:text="Note List"
+				android:layout_gravity="left|center_vertical"
+				android:gravity="left|center_vertical"
+				android:textStyle="bold"
+				android:textSize="@dimen/pngnote__treefontsize4"
+				>
+			</TextView>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<ImageButton
+				android:id="@+id/buttonNewBook"
+				android:layout_width="@dimen/pngnote__treefontsize5"
+				android:layout_height="@dimen/pngnote__treefontsize5"
+				android:layout_centerVertical="true"
+				android:layout_gravity="center"
+				android:background="@drawable/toolbar_button"
+				android:gravity="center"
+				android:paddingLeft="5dp"
+				android:paddingRight="5dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ic_baseline_add_24"
+				android:text="NEW BOOK"
+				android:textAllCaps="true"
+				android:textColor="@color/black"
+				android:textSize="11sp" />
+
+			<TextView
+				android:id="@+id/upload_buttontxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10px"
+				android:layout_marginRight="10px"
+				android:gravity="center"
+				android:text="New Book"
+				android:textSize="@dimen/pngnote__treefontsize4"
+				android:visibility="gone"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="gone"
+			>
+
+			<ImageButton
+				android:id="@+id/buttonSettings"
+				android:layout_width="@dimen/pngnote__treefontsize5"
+				android:layout_height="@dimen/pngnote__treefontsize5"
+				android:layout_centerVertical="true"
+				android:layout_gravity="center"
+				android:background="@drawable/toolbar_button"
+				android:gravity="center"
+				android:paddingLeft="5dp"
+				android:paddingRight="5dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/ic_baseline_settings_24"
+				android:text="SETTINGS"
+				android:textAllCaps="true"
+				android:textColor="@color/black"
+				android:textSize="11sp" />
+
+			<TextView
+				android:id="@+id/close_buttontxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10px"
+				android:layout_marginRight="10px"
+				android:gravity="center"
+				android:text="Settings"
+				android:textSize="@dimen/pngnote__treefontsize4"
+				android:visibility="gone"
+				/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</merge>

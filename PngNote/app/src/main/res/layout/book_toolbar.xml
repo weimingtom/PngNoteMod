@@ -44,8 +44,8 @@
 				>
 				<!--25dp-->
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -64,7 +64,7 @@
 					android:id="@+id/reflow_button2txt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Back"
 					android:layout_gravity="center"
 					android:gravity="center"
@@ -80,8 +80,8 @@
 				android:orientation="vertical"
 				>
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -100,7 +100,7 @@
 					android:id="@+id/tree_buttontxt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Pen"
 					android:layout_gravity="center"
 					android:gravity="center"
@@ -117,8 +117,8 @@
 				android:orientation="vertical"
 				>
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -141,7 +141,7 @@
 					android:id="@+id/goto_page_buttontxt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Eraser"
 					android:layout_gravity="center"
 					android:gravity="center"
@@ -194,8 +194,8 @@
 
 
             <ImageButton
-                android:layout_width="@dimen/mtmobile__treefontsize5"
-                android:layout_height="@dimen/mtmobile__treefontsize5"
+                android:layout_width="@dimen/pngnote__treefontsize5"
+                android:layout_height="@dimen/pngnote__treefontsize5"
                 android:layout_centerVertical="true"
                 android:scaleType="fitCenter"
                 android:paddingLeft="5dp"
@@ -243,8 +243,8 @@
 
 					<ImageButton
 						android:id="@+id/buttonUndo"
-						android:layout_width="@dimen/mtmobile__treefontsize5"
-						android:layout_height="@dimen/mtmobile__treefontsize5"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
 						android:layout_centerVertical="true"
 						android:background="@drawable/toolbar_button"
 						android:paddingLeft="5dp"
@@ -264,7 +264,7 @@
 						android:id="@+id/draw_buttontxt"
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
-	                    android:textSize="@dimen/mtmobile__treefontsize4"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
 	                    android:layout_gravity="center"
 	                    android:text="Undo"
 	                    android:gravity="center"
@@ -284,8 +284,8 @@
 	                android:orientation="vertical"
 	                >
 	                <ImageButton
-	                    android:layout_width="@dimen/mtmobile__treefontsize5"
-	                    android:layout_height="@dimen/mtmobile__treefontsize5"
+	                    android:layout_width="@dimen/pngnote__treefontsize5"
+	                    android:layout_height="@dimen/pngnote__treefontsize5"
 	                    android:layout_centerVertical="true"
 	                    android:scaleType="fitCenter"
 	                    android:paddingLeft="5dp"
@@ -304,7 +304,7 @@
 						android:id="@+id/line_color_buttontxt"
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
-	                    android:textSize="@dimen/mtmobile__treefontsize4"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
 	                    android:text="Redo"
 	                    android:layout_gravity="center"
 	                    android:gravity="center"
@@ -320,8 +320,8 @@
 	                android:orientation="vertical"
 	                >
 	                <ImageButton
-	                    android:layout_width="@dimen/mtmobile__treefontsize5"
-	                    android:layout_height="@dimen/mtmobile__treefontsize5"
+	                    android:layout_width="@dimen/pngnote__treefontsize5"
+	                    android:layout_height="@dimen/pngnote__treefontsize5"
 	                    android:layout_centerVertical="true"
 	                    android:scaleType="fitCenter"
 	                    android:paddingLeft="5dp"
@@ -340,7 +340,7 @@
 						android:id="@+id/line_thickness_buttontxt"
 	                    android:layout_width="wrap_content"
 	                    android:layout_height="wrap_content"
-	                    android:textSize="@dimen/mtmobile__treefontsize4"
+	                    android:textSize="@dimen/pngnote__treefontsize4"
 	                    android:text="Grid"
 	                    android:layout_gravity="center"
 	                    android:gravity="center"
@@ -384,8 +384,8 @@
 					android:visibility="gone"
 					>
 					<ImageButton
-						android:layout_width="@dimen/mtmobile__treefontsize5"
-						android:layout_height="@dimen/mtmobile__treefontsize5"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
 						android:layout_centerVertical="true"
 						android:scaleType="fitCenter"
 						android:paddingLeft="5dp"
@@ -404,7 +404,7 @@
 						android:id="@+id/undo_annot_buttontxt"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:textSize="@dimen/mtmobile__treefontsize4"
+						android:textSize="@dimen/pngnote__treefontsize4"
 						android:text="First Page"
 						android:layout_gravity="center"
 						android:gravity="center"
@@ -422,8 +422,8 @@
 					android:id="@+id/linearTextAnnot"
 					>
 					<ImageButton
-						android:layout_width="@dimen/mtmobile__treefontsize5"
-						android:layout_height="@dimen/mtmobile__treefontsize5"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
 						android:layout_centerVertical="true"
 						android:scaleType="fitCenter"
 						android:paddingLeft="5dp"
@@ -442,7 +442,7 @@
 						android:id="@+id/note_buttontxt"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:textSize="@dimen/mtmobile__treefontsize4"
+						android:textSize="@dimen/pngnote__treefontsize4"
 						android:text="Prev Page"
 						android:layout_gravity="center"
 						android:gravity="center"
@@ -455,11 +455,11 @@
 				<TextView
 					android:id="@+id/textViewPageInfo"
 					android:layout_width="wrap_content"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:text="1/1"
 					android:textStyle="bold"
 					android:gravity="center|center_vertical"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					/>
 
 				<LinearLayout
@@ -468,8 +468,8 @@
 					android:orientation="vertical"
 					>
 					<ImageButton
-						android:layout_width="@dimen/mtmobile__treefontsize5"
-						android:layout_height="@dimen/mtmobile__treefontsize5"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
 						android:layout_centerVertical="true"
 						android:scaleType="fitCenter"
 						android:paddingLeft="5dp"
@@ -488,7 +488,7 @@
 						android:id="@+id/delete_buttontxt"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:textSize="@dimen/mtmobile__treefontsize4"
+						android:textSize="@dimen/pngnote__treefontsize4"
 						android:text="Next Page"
 						android:layout_gravity="center"
 						android:gravity="center"
@@ -506,8 +506,8 @@
 					android:visibility="gone"
 					>
 					<ImageButton
-						android:layout_width="@dimen/mtmobile__treefontsize5"
-						android:layout_height="@dimen/mtmobile__treefontsize5"
+						android:layout_width="@dimen/pngnote__treefontsize5"
+						android:layout_height="@dimen/pngnote__treefontsize5"
 						android:layout_centerVertical="true"
 						android:scaleType="fitCenter"
 						android:paddingLeft="5dp"
@@ -526,7 +526,7 @@
 						android:id="@+id/upload_buttontxt"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:textSize="@dimen/mtmobile__treefontsize4"
+						android:textSize="@dimen/pngnote__treefontsize4"
 						android:text="Last Page"
 						android:layout_gravity="center"
 						android:gravity="center"
@@ -573,8 +573,8 @@
 				android:orientation="vertical"
 				>
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -593,7 +593,7 @@
 					android:id="@+id/remove_buttontxt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Remove page"
 					android:layout_gravity="center"
 					android:gravity="center"
@@ -609,8 +609,8 @@
 				android:orientation="vertical"
 				>
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -629,7 +629,7 @@
 					android:id="@+id/close_buttontxt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Add page"
 					android:layout_gravity="center"
 					android:gravity="center"
@@ -654,8 +654,8 @@
 				android:visibility="gone"
 				>
 				<ImageButton
-					android:layout_width="@dimen/mtmobile__treefontsize5"
-					android:layout_height="@dimen/mtmobile__treefontsize5"
+					android:layout_width="@dimen/pngnote__treefontsize5"
+					android:layout_height="@dimen/pngnote__treefontsize5"
 					android:layout_centerVertical="true"
 					android:scaleType="fitCenter"
 					android:paddingLeft="5dp"
@@ -674,7 +674,7 @@
 					android:id="@+id/share_buttontxt"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:textSize="@dimen/mtmobile__treefontsize4"
+					android:textSize="@dimen/pngnote__treefontsize4"
 					android:text="Share"
 					android:layout_gravity="center"
 					android:gravity="center"
