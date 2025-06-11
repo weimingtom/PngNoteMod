@@ -1,5 +1,5 @@
 # PngNoteMod
-My PngNote non_boox Java port, a simple handwrite notepad Android application for easy modification, see also https://github.com/karino2/PngNote/tree/non_boox    
+My PngNote non_boox Java port, a simple handwriting notepad Android application for easy modification, see also https://github.com/karino2/PngNote/tree/non_boox    
 
 ## Licensing
 ```
