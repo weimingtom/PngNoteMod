@@ -33,3 +33,6 @@ Artists, Copyright: きみどり-san (twitter: @kani_beam__)
 ## Status
 * Currently not stable, I will change it largely in future
 * But it may work if running in some Android Emulators, like MuMu Emulator (old version, 2.7.34.0 (20230814231105))   
+
+## TODO
+* Update to PngNote_work.7z  
