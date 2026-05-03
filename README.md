@@ -36,3 +36,6 @@ Artists, Copyright: きみどり-san (twitter: @kani_beam__)
 
 ## TODO
 * Update to PngNote_work.7z  
+
+## About boox, 文石  
+* ONYX NoteAir, Android 10.0, API 29
